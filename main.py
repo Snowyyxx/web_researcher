@@ -12,7 +12,7 @@ if __name__ == "__main__":
     # Load environment variables
     load_dotenv()
     
-    log_info("Starting Research Assistant server...")
+    log_info("Starting Research Assistant server....")
     uvicorn.run(
         "app.main:app",
         host="127.0.0.1",
