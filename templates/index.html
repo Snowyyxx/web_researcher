@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-base-200">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8">Research Assistant</h1>
+        
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Enter Research Topic</span>
+                    </label>
+                    <div class="input-group">
+                        <input type="text" id="topic-input" class="input input-bordered w-full" placeholder="Enter your research topic">
+                        <button id="submit-btn" class="btn btn-primary">Enter</button>
+                    </div>
+                </div>
+
+                <div id="questions-section" class="mt-8 hidden">
+                    <h2 class="text-2xl font-semibold mb-4">Generated Questions</h2>
+                    <ul id="questions-list" class="space-y-2"></ul>
+                    <button id="fetch-answers-btn" class="btn btn-secondary mt-4">Get Answers</button>
+                </div>
+
+                <div id="answers-section" class="mt-8 hidden">
+                    <h2 class="text-2xl font-semibold mb-4">Answers</h2>
+                    <div id="answers-list" class="space-y-4"></div>
+                    <button id="generate-summary-btn" class="btn btn-accent mt-4">Generate Summary</button>
+                </div>
+
+                <div id="summary-section" class="mt-8 hidden">
+                    <h2 class="text-2xl font-semibold mb-4">Topic Summary</h2>
+                    <div id="summary-content" class="p-4 bg-base-200 rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+Create a basic web application using FastAPI, Tailwind CSS, and DaisyUI. 
+
+Functionality:
+1. **Input Research Topic**: 
+   - The user should be able to input a research topic into a text field and submit it by clicking "Enter".
+   - Upon submission, use the OpenAI API to generate 5 questions related to the research topic.
+   - Store and display the generated questions on the web interface.
+
+2. **Fetch Answers for Questions**:
+   - Use the Tavil API to scrape the internet for answers to the 5 generated questions.
+   - The scraped answers should be further refined by sending them to the OpenAI API for "finishing" or improvement.
+
+3. **Display Results**:
+   - Display the final answers (after processing by OpenAI) to the user on the web interface.
+
+Tech Stack Requirements:
+- **Backend**: Use FastAPI to manage the API interactions and logic.
+- **Frontend**: Use Tailwind CSS and DaisyUI for styling and user interface.
+- **APIs**: Integrate the OpenAI API for question generation and answer refinement. Use the Tavil API for web scraping.
+
+Features:
+- Build a clean and minimal user interface for input and output.
+- Ensure the application is responsive and user-friendly.
+
+Please provide a modular code structure and clear comments for easy understanding.
